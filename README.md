@@ -8,4 +8,9 @@
    - Initialize shadcn 
    ```
     npx shadcn-ui@latest init
+   ```
+   - Install all components
+   - ```
+     npx shadcn-ui@latest add button breadcrumb calendar card checkbox dropdown-menu input label popover scroll-area select separator table textarea toast skeleton
+     ```
      
