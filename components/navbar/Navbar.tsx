@@ -1,4 +1,4 @@
-import DarkMode from "./DarkMode";
+import { DarkMode } from "./DarkMode";
 import LinksDropdown from "./LinksDropdown";
 import Logo from "./Logo";
 import NavSearch from "./NavSearch";

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import { Providers } from "./providers/Providers";
 
 export const metadata: Metadata = {
   title: "Home Away",
@@ -16,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main className="container py-10">{children}</main>
+        <Providers>
+          <Navbar />
+          <main className="container py-10">{children}</main>
+        </Providers>
       </body>
     </html>
   );
