@@ -25,3 +25,6 @@
    - Create a ThemeProvider
    - Add button for dark-mode toggle
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/4
+## 5.Implement Navbar LinksDropdown 
+   - Create a dropdown for links in navbar
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/5
