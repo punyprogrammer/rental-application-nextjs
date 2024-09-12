@@ -14,7 +14,13 @@
      npx shadcn-ui@latest add button breadcrumb calendar card checkbox dropdown-menu input label popover scroll-area select separator table textarea toast skeleton
      ```
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/2
-## Setup Navbar Structure
+## 3.Setup Navbar Structure
    - Intialise Navbar Structure
    - Install React Icons
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/3
+## 4.Set Theme and Dark Mode Implementation
+   - Override root styles from Next green theme
+   - Create a Providers to Wrap all providers
+   - Install next-themes
+   - Create a ThemeProvider
+   - Add button for dark-mode toggle
