@@ -24,3 +24,4 @@
    - Install next-themes
    - Create a ThemeProvider
    - Add button for dark-mode toggle
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/4
