@@ -28,3 +28,8 @@
 ## 5.Implement Navbar LinksDropdown 
    - Create a dropdown for links in navbar
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/5
+
+## 6.Implement Clerk Login ,Signup and SignOut
+   - Integrate Clerk and wrap the Layout with Clerk Provider
+   - Use SignIned ,Signout for handling cases
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/6
