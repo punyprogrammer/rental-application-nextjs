@@ -3,12 +3,16 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { LuAlignLeft } from "react-icons/lu";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import UserIcon from "./UserIcon";
 import { links } from "@/utils/links";
+import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
+import SignoutLink from "./SignoutLink";
+import { NavLinkTexts } from "@/utils/constants";
 
 function LinksDropdown() {
   return (
@@ -23,15 +27,32 @@ function LinksDropdown() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-52" align="start" sideOffset={10}>
-        {links.map((link) => {
-          return (
-            <DropdownMenuItem key={link.href}>
-              <Link href={link.href} className="capitalize w-full">
-                {link.label}
-              </Link>
-            </DropdownMenuItem>
-          );
-        })}
+        {/* If user is signed in render these */}
+        <SignedIn>
+          {links.map((link) => {
+            return (
+              <DropdownMenuItem key={link.href}>
+                <Link href={link.href} className="capitalize w-full">
+                  {link.label}
+                </Link>
+              </DropdownMenuItem>
+            );
+          })}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>
+            <SignoutLink />
+          </DropdownMenuItem>
+        </SignedIn>
+        <SignedOut>
+          <DropdownMenuItem>
+            <SignInButton mode="modal">
+              <button>{NavLinkTexts.SIGN_IN}</button>
+            </SignInButton>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <SignUpButton mode="modal">{NavLinkTexts.SIGN_UP}</SignUpButton>
+          </DropdownMenuItem>
+        </SignedOut>
       </DropdownMenuContent>
     </DropdownMenu>
   );
