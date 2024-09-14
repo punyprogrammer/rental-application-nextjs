@@ -33,3 +33,8 @@
    - Integrate Clerk and wrap the Layout with Clerk Provider
    - Use SignIned ,Signout for handling cases
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/6
+
+## 7.FormInput,Button,useFormStatehooks,FormComponent 
+   - Build generic FormInput,FormContainer,Button
+   - useFormState hook to manage state
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/7
