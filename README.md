@@ -38,3 +38,8 @@
    - Build generic FormInput,FormContainer,Button
    - useFormState hook to manage state
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/7
+
+## 8.Integrate Zod for form validations
+   - Install zod for validations
+   - create a zod schema for user profile validation
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/8
