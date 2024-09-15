@@ -43,3 +43,9 @@
    - Install zod for validations
    - create a zod schema for user profile validation
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/8
+
+## 9.Setup Prisma and Supabase
+   - Create a db instance on supabase
+   - Install prisma and create a prisma client
+   - Connect with the supabase through prisma
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/9
