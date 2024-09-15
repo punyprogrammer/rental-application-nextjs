@@ -54,3 +54,7 @@
    - Create a user profile model in db
    - Create a new profile
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/10
+
+## 11.Fetch user profile image and render in Navbar
+   - Fetch user info from db and render
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/11/files
