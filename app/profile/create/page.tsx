@@ -1,7 +1,7 @@
 import { SubmitButton } from "@/components/form/Buttons";
 import FormContainer from "@/components/form/FormContainer";
 import FormInput from "@/components/form/FormInput";
-import { createProfileAction } from "@/utils/actions";
+import { createProfileAction } from "@/utils/actions/profileActions";
 
 function CreateProfile() {
   return (
