@@ -49,3 +49,8 @@
    - Install prisma and create a prisma client
    - Connect with the supabase through prisma
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/9
+
+## 10.Create user profile entry and model 
+   - Create a user profile model in db
+   - Create a new profile
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/10
