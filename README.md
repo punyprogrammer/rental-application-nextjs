@@ -58,3 +58,7 @@
 ## 11.Fetch user profile image and render in Navbar
    - Fetch user info from db and render
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/11/files
+
+## 12.Update user profile page 
+   - Update user profile
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/12/files
