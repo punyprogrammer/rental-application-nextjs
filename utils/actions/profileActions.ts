@@ -3,9 +3,10 @@ import db from "../db";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { currentUser, auth, clerkClient } from "@clerk/nextjs/server";
-import { profileSchema } from "../schemas";
+import { imageSchema, profileSchema } from "../schemas";
 import { EXPORT_DETAIL } from "next/dist/shared/lib/constants";
 import { getAuthUser, renderError, validateZodSchema } from "../helpers/helper";
+import { uploadImage } from "../supabase";
 
 export const createProfileAction = async (
   prevState: any,
@@ -92,6 +93,32 @@ export const updateUserProfileAction = async (
     });
     revalidatePath("/profile");
     return { message: "Profile Updated Successfully" };
+  } catch (error) {
+    return renderError(error);
+  }
+};
+
+// action to update profile image
+export const updateProfileImageAction = async (
+  prevState: any,
+  formData: FormData
+) => {
+  const user = await getAuthUser();
+  try {
+    const image = formData.get("image") as File;
+    const validatedFields = validateZodSchema(imageSchema, { image });
+    const fullPath = await uploadImage(validatedFields.image);
+
+    await db.profile.update({
+      where: {
+        clerkId: user.id,
+      },
+      data: {
+        profileImage: fullPath,
+      },
+    });
+    revalidatePath("/profile");
+    return { message: "Profile image updated successfully" };
   } catch (error) {
     return renderError(error);
   }
