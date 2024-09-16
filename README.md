@@ -62,3 +62,10 @@
 ## 12.Update user profile page 
    - Update user profile
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/12/files
+## 13.Implement image upload functionality in supabase
+   - Create Image input component
+   - Add zod validation for image input
+   - Create supabase bucket for image storage
+   - Add Supabase keys in .env
+   - Install @supabase/supabase-js
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/13/files
