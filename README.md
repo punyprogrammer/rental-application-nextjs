@@ -74,3 +74,7 @@
    - Create property schema
    - Create property action 
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/14/files
+
+## 15.Implement fetch properties action 
+   - Create action to fetch all properties with search term and category
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/15/files
