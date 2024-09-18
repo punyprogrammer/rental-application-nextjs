@@ -69,3 +69,8 @@
    - Add Supabase keys in .env
    - Install @supabase/supabase-js
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/13/files
+
+## 14.Implmenting Create Profile functionality 
+   - Create property schema
+   - Create property action 
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/14/files
