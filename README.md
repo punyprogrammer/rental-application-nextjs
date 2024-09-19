@@ -78,3 +78,10 @@
 ## 15.Implement fetch properties action 
    - Create action to fetch all properties with search term and category
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/15/files
+
+## 16.Setup home page
+   - Fetch properties on homepage
+   - Create card component to properties
+   - Add loader
+   - Add search component with use debounce
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/16/files
