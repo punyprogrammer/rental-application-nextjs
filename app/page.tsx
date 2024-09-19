@@ -1,16 +1,29 @@
-import { Button } from "@/components/ui/button";
+import LoadingCards from "@/components/card/LoadingCards";
+import CategoriesList from "@/components/homepage/CategoriesList";
+import PropertiesContainer from "@/components/homepage/PropetiesContainer";
+import { Suspense } from "react";
 
-export default function Page() {
+export default function HomePage({
+  searchParams,
+}: {
+  searchParams: {
+    category?: string;
+    search?: string;
+  };
+}) {
+  console.log("SEARCH", searchParams);
   return (
-    <div>
-      <h1 className="text-3xl">
-        <Button
-          className={"w-[128px] p-4 hover:bg-blue-400"}
-          variant={"secondary"}
-        >
-          Click me{" "}
-        </Button>
-      </h1>
-    </div>
+    <section>
+      <CategoriesList
+        category={searchParams.category}
+        search={searchParams.search}
+      />
+      <Suspense fallback={<LoadingCards />}>
+        <PropertiesContainer
+          category={searchParams.category}
+          search={searchParams.search}
+        />
+      </Suspense>
+    </section>
   );
 }
