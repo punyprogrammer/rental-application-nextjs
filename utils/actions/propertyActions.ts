@@ -30,7 +30,8 @@ export const createPropertyAction = async (
   }
   redirect("/");
 };
-// action to fetch properties
+
+// an action to fetch all properties
 export const fetchProperties = async ({
   search = "",
   category,
