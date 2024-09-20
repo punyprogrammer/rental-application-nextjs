@@ -85,3 +85,8 @@
    - Add loader
    - Add search component with use debounce
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/16/files
+
+## 17. Implement add to favourites 
+   - Create favourites and create relations between profile and property
+   - Add a toggle favourite button which shows sign in if the user is logged out
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/17/files
