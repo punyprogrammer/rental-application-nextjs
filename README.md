@@ -13,7 +13,7 @@
    - ```
      npx shadcn-ui@latest add button breadcrumb calendar card checkbox dropdown-menu input label popover scroll-area select separator table textarea toast skeleton
      ```
-   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/2
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/2/files
 ## 3.Setup Navbar Structure
    - Intialise Navbar Structure
    - Install React Icons
