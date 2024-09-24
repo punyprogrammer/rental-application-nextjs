@@ -6,7 +6,7 @@ import { imageSchema, propertySchema } from "../schemas";
 import { uploadImage } from "../supabase";
 
 export const createPropertyAction = async (
-  prevState: any,
+  prevState: unknown,
   formData: FormData
 ): Promise<{ message: string }> => {
   const user = await getAuthUser();
