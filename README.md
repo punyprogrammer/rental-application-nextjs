@@ -90,3 +90,13 @@
    - Create favourites and create relations between profile and property
    - Add a toggle favourite button which shows sign in if the user is logged out
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/17/files
+
+## 18. Implement Property page 
+   - Create Image info ,description ,Calender component
+   - Add a map component
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/18/files
+
+## 19.Deploy vercel 
+   - Modify the build script to handle prisma
+   - Setup vercel and add env variables
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/19/files
