@@ -58,3 +58,15 @@ export const fetchProperties = async ({
   });
   return properties;
 };
+
+// acion to fetch a single property
+export const fetchPropertyDetails = (id: string) => {
+  return db.property.findUnique({
+    where: {
+      id,
+    },
+    include: {
+      profile: true,
+    },
+  });
+};
