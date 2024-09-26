@@ -100,3 +100,9 @@
    - Modify the build script to handle prisma
    - Setup vercel and add env variables
    - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/19/files
+
+## 20 Implement Review Funcionality 
+   - Create model for reviews
+   - Add review input component
+   - Add functionality get average and count from prisma
+   - MR:  https://github.com/punyprogrammer/rental-application-nextjs/pull/20/files
