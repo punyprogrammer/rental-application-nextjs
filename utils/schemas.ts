@@ -17,7 +17,12 @@ export const imageSchema = z.object({
 // a function to validate file type
 function validateFile() {
   const maxUploadSize = 1024 * 1024;
-  const acceptedFileTypes = ["image/jpeg", "image/png", "image/jpg"];
+  const acceptedFileTypes = [
+    "image/jpeg",
+    "image/png",
+    "image/jpg",
+    "image/webp",
+  ];
   return z
     .instanceof(File)
     .refine((file) => {
@@ -72,4 +77,10 @@ export const propertySchema = z.object({
     message: "bahts amount must be a positive number.",
   }),
   amenities: z.string(),
+});
+
+export const createReviewSchema = z.object({
+  propertyId: z.string(),
+  rating: z.coerce.number().int().min(1).max(5),
+  comment: z.string().min(10).max(1000),
 });
