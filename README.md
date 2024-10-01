@@ -27,17 +27,17 @@
    - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/4/files
 ## 5.Implement Navbar LinksDropdown 
    - Create a dropdown for links in navbar
-   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/5
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/5/files
 
 ## 6.Implement Clerk Login ,Signup and SignOut
    - Integrate Clerk and wrap the Layout with Clerk Provider
    - Use SignIned ,Signout for handling cases
-   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/6
+   - MR: https://github.com/punyprogrammer/rental-application-nextjs/pull/6/files
 
 ## 7.FormInput,Button,useFormStatehooks,FormComponent 
    - Build generic FormInput,FormContainer,Button
    - useFormState hook to manage state
-   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/7
+   - MR : https://github.com/punyprogrammer/rental-application-nextjs/pull/7/files
 
 ## 8.Integrate Zod for form validations
    - Install zod for validations
